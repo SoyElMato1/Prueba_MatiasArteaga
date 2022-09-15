@@ -1,0 +1,14 @@
+<section>
+  <h2>Datos de Clase</h2>
+  <fieldset>
+    <label >Ingrese una seccion</label>
+    <input type="number" [value]="nuevaSeccion.idNumerica" (input)="cambiarID($event)">
+  </fieldset>
+  <fieldset>
+    <label >Ingrese una seccion</label>
+    <input type="text" [value]="nuevaSeccion.nombreSeccion" (input)="cambiarNSeccion($event)">
+  </fieldset>
+  <fieldset>
+    <button type="button" (click)="guardarSeccion()">Guardar</button>
+  </fieldset>
+</section>
